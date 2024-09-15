@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin User',
             'email' => 'admin@dardigital.com',
         ]);
+        $this->call(UsersTableSeeder::class);
+    
     }
 }
